@@ -1,0 +1,52 @@
+package CollectionSet;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.Set;
+
+
+public class CollectionSet {
+
+	public static void main(String[] args) {
+		
+		
+		        // Crie um Scanner para obter entrada do usuário
+		        Scanner scanner = new Scanner(System.in);
+
+		        // Crie um Set para armazenar os valores inteiros
+		        Set<Integer> integerSet = new HashSet<>();
+
+		        // Peça ao usuário para inserir 10 valores inteiros não repetidos
+		        System.out.println("Digite 10 valores inteiros não repetidos:");
+
+		        for (int i = 0; i < 10; i++) {
+		            int valor;
+		            do {
+		                System.out.print("Valor " + (i + 1) + ": ");
+		                valor = scanner.nextInt();
+
+		                // Verifique se o valor já existe no conjunto
+		                if (integerSet.contains(valor)) {
+		                    System.out.println("Este valor já foi inserido. Tente novamente.");
+		                }
+		            } while (integerSet.contains(valor));
+
+		            // Adicione o valor ao conjunto
+		            integerSet.add(valor);
+		        }
+
+		        // Feche o Scanner, pois não precisamos mais dele
+		        scanner.close();
+
+		        // Use um Iterator para percorrer e mostrar os elementos do conjunto
+		        Iterator<Integer> iterator = integerSet.iterator();
+		        System.out.println("\nElementos da Collection Set:");
+
+		        while (iterator.hasNext()) {
+		            System.out.println(iterator.next());
+		        }
+		    }
+		}
+
+
+	

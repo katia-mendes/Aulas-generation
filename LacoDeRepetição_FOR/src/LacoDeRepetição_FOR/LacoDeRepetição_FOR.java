@@ -1,0 +1,40 @@
+package LacoDeRepetição_FOR;
+import java.util.Scanner;
+public class LacoDeRepetição_FOR {
+
+	public static void main(String[] args) {
+
+		        // Cria um objeto Scanner para ler a entrada do usuário
+		        Scanner leia = new Scanner(System.in);
+
+		        // Declaração das variáveis
+		        int numero1, numero2;
+		        int contador;
+
+		        // Solicita ao usuário o primeiro número do intervalo
+		        System.out.print("Digite o primeiro número do intervalo: ");
+		        numero1 = leia.nextInt();
+
+		        // Solicita ao usuário o último número do intervalo
+		        System.out.print("Digite o último número do intervalo: ");
+		        numero2 = leia.nextInt();
+
+		        // Verifica se o intervalo é válido (o primeiro número deve ser maior ou igual ao segundo)
+		        if (numero1 >= numero2) {
+		            System.out.println("Intervalo inválido!");
+		        } else {
+		            System.out.println("No intervalo entre " + numero1 + " e " + numero2 + ":");
+
+		            // Loop for para repetir entre os números no intervalo
+		            for (contador = numero1; contador <= numero2; contador++) {
+		                // Verifica se o número é múltiplo de 3 e 5
+		                if (contador % 3 == 0 && contador % 5 == 0) {
+		                    System.out.println(contador + " é múltiplo de 3 e 5");
+		                }
+		            }
+		        }
+
+		        // Fecha o objeto Scanner
+		        leia.close();
+		    }
+		}

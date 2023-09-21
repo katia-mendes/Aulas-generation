@@ -1,0 +1,19 @@
+package pooHerancaePolimorfismo;
+	// Classe TestaFuncionario
+		public class TestaFuncionario {
+		    public static void main(String[] args) {
+		        // Instanciando um objeto da classe Funcionario
+		        Funcionario funcionario1 = new Funcionario("Alice", 30, "Analista de Vendas", 4500.0, "Vendas");
+
+		        // Instanciando um objeto da classe Gerente
+		        Gerente gerente1 = new Gerente("Bob", 40, "Gerente de Vendas", 8000.0, "Vendas", "Gestão de Vendas");
+
+		        // Exibindo informações do funcionário
+		        System.out.println("Dados do Funcionário:");
+		        funcionario1.visualizar();
+
+		        System.out.println("\nDados do Gerente:");
+		        gerente1.visualizar();
+		    }
+		}
+

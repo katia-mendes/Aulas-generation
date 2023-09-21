@@ -1,0 +1,17 @@
+
+	package calculadora;
+
+	// 1. Correção: Importe a interface Operacao aqui.
+	import calculadora.OperacaoSomar.Operacao;
+
+	public class OperacaoSubtracao implements Operacao {
+
+	    // 2. Correção: Implemente o método calcular da interface Operacao.
+	    @Override
+	    public double calcular(double num1, double num2) {
+	        return num1 - num2;
+	    }
+
+	    // 3. Removido o código desnecessário que estava dentro da classe interface.
+	    // Essa classe não precisa conter uma classe interna chamada Subtracao.
+	}

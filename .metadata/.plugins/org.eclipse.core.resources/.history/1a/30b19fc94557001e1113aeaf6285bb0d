@@ -1,0 +1,34 @@
+package pooHerancaePolimorfismo;
+	// Classe ClienteVIP herda de Cliente
+	class ClienteVIP extends Cliente {
+	    // Atributo específico para cliente VIP
+	    private double limiteCredito;
+
+	    // Construtor da classe ClienteVIP
+	    public ClienteVIP(String nome, int idade, String endereco, String email, String telefone, double limiteCredito) {
+	        // Chama o construtor da classe pai (Cliente) usando super
+	        super(nome, idade, endereco, email, telefone);
+	        this.limiteCredito = limiteCredito;
+	    }
+
+	    // Método getter para o atributo limiteCredito
+	    public double getLimiteCredito() {
+	        return limiteCredito;
+	    }
+
+	    // Método setter para o atributo limiteCredito
+	    public void setLimiteCredito(double limiteCredito) {
+	        this.limiteCredito = limiteCredito;
+	    }
+
+	    // Método para visualizar informações do cliente VIP
+	    @Override
+	    public void visualizar() {
+	        // Chama o método visualizar da classe pai (Cliente) usando super
+	        super.visualizar();
+	        System.out.println("Limite de Crédito: " + limiteCredito);
+	    }
+	}
+
+
+

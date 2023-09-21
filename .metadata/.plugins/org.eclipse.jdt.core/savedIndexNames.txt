@@ -1,0 +1,19 @@
+INDEX VERSION 1.134+C:\Users\katia\Documents\workspace-spring-tool-suite-4-4.19.1.RELEASE\.metadata\.plugins\org.eclipse.jdt.core
+811147442.index
+3765575557.index
+2549086038.index
+1865797976.index
+1655118592.index
+2607344246.index
+3504966057.index
+2300501745.index
+3522991920.index
+3288345343.index
+1505789911.index
+1659870280.index
+1552261772.index
+3613783464.index
+2524174724.index
+826628092.index
+3242768292.index
+1694939.index

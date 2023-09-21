@@ -1,0 +1,42 @@
+package Collections;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Collections {
+
+	public static void main(String[] args) {
+		
+		        // Criei um ArrayList para armazenar as cores
+		        List<String> cores = new ArrayList<String>();
+
+		        // Criei um objeto Scanner para receber entrada do usuário
+		        Scanner scanner = new Scanner(System.in);
+
+		        // Peça ao usuário que digite 5 cores
+		        for (int i = 0; i < 5; i++) {
+		            System.out.print("Digite uma cor: ");
+		            String cor = scanner.nextLine();
+
+		            // Adicione a cor à ArrayList
+		            cores.add(cor);
+		        }
+
+		        // Feche o scanner
+		        scanner.close();
+
+		        // Mostre na tela todas as cores que foram adicionadas
+		        System.out.println("Cores adicionadas:");
+		        for (String cor : cores) {
+		            System.out.println(cor);
+		        }
+
+		        // Ordene as cores em ordem crescente
+		        Collections.sort(cores);
+
+		        // Mostre na tela todas as cores ordenadas
+		        System.out.println("\nCores ordenadas em ordem crescente:");
+		        for (String cor : cores) {
+		            System.out.println(cor);
+		        }
+		    }
+		}

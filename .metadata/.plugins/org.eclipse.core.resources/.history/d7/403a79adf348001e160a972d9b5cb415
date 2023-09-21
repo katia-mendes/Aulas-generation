@@ -1,0 +1,43 @@
+package testeLoop;
+import java.util.Scanner;
+public class testeLoop {
+	public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+
+        String n;
+
+        for (int c=1;c<=4;c++) {
+            System.out.println("\nDigite o "+c+"º nome:");
+            n = leia.nextLine();
+        }
+        System.out.println("\nVagas esgotadas.");
+
+        //While abaixo
+        int r, o, num;
+
+        System.out.println("\nDigite um numero diferente de 0: ");
+        o = leia.nextInt();
+
+        while (o!=0) {
+            r=o5;
+            System.out.println("\nResultado da multiplicação: "+r);
+            System.out.println("\nDigite 0 para sair.");
+            System.out.println("Ou digite um numero inteiro: ");
+            o = leia.nextInt();
+        }
+
+        //Do abaixo
+        int y, x;
+
+        do {
+            System.out.println("\nDigite um numero diferente de 0: ");
+            y = leia.nextInt();
+            x=y5;
+            System.out.println("\nResultado da multiplicação: "+x);
+            System.out.println("\nDigite 0 para sair.");
+        }while (y!=0);
+    }
+﻿
+
+
+}

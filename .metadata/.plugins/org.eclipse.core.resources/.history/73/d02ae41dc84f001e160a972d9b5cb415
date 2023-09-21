@@ -1,0 +1,32 @@
+package Vetores;
+import java.util.Scanner;
+public class Vetores {
+
+	public static void main(String[] args) {
+		//Declarando a variavel vetor
+				int vetor[] = {2, 5, 1, 3, 4, 9, 7, 8, 10, 6}, i = 0, numero;
+				//A leitura do valor que deve ser encontrado no índice
+				Scanner leia = new Scanner(System.in);
+				System.out.print("Digite o número que você deseja encontrar: ");
+				numero = leia.nextInt();
+				
+				//identifica a posição do vetor
+				for(i = 0; i < vetor.length;) {
+					if(numero == vetor[i]) {
+						System.out.println("O número " + numero + " está localizado na posição: " + (i + 1));
+						break;
+					}
+					i++;
+					//Se o número estiver dentro, ele deve printar a mensagem de erro
+					if(i == vetor.length) {
+						System.out.println("O número " + numero + " não foi encontrado!");
+						break;
+					}
+				}
+			}
+
+		}
+
+	
+
+}

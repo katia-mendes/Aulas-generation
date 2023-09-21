@@ -1,0 +1,23 @@
+package LacoDeRepeticao_DO_WHILE;
+import java.util.Scanner;
+public class LacoDeRepeticao_DO_WHILE {
+
+	public static void main(String[] args) {
+	 Scanner leia = new Scanner(System.in);
+				
+				int entrada;
+				int soma = 0;
+				
+				do {
+					System.out.print("Digite um número: ");
+					entrada = leia.nextInt();
+		            // Verifica se a entrada é positiva antes de somá-la
+					if(entrada > 0) {
+						soma += entrada;
+					}
+				}
+				while(entrada != 0);// Continua até que seja digitado 0
+				System.out.print("A soma dos números positivos é: " + soma);
+				leia.close();
+    }
+}

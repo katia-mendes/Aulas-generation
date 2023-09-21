@@ -1,0 +1,76 @@
+package calculadora;
+
+public class OperacaoSomar {
+	interface Operacao {
+	    double calcular(double num1, double num2);
+	}
+
+	class Soma implements Operacao {
+	    @Override
+	    public double calcular(double num1, double num2) {
+	        return num1 + num2;
+	    }
+	}
+
+	class Subtracao implements Operacao {
+	    @Override
+	    public double calcular(double num1, double num2) {
+	        return num1 - num2;
+	    }
+	}
+
+	class Multiplicacao implements Operacao {
+	    @Override
+	    public double calcular(double num1, double num2) {
+	        return num1 * num2;
+	    }
+	}
+
+	class Divisao implements Operacao {
+	    @Override
+	    public double calcular(double num1, double num2) {
+	        if (num2 != 0) {
+	            return num1 / num2;
+	        } else {
+	            throw new ArithmeticException("Divisão por zero não é permitida!");
+	        }
+	    }
+	}
+
+	class Potenciacao implements Operacao {
+	    @Override
+	    public double calcular(double num1, double num2) {
+	        return Math.pow(num1, num2);
+	    }
+	}
+
+	public class Calculadora {
+
+	    double executarOperacao(int escolha, double num1, double num2) {
+	        Operacao operacao = null;
+	        switch (escolha) {
+	            case 1:
+	                operacao = new Soma();
+	                break;
+	            case 2:
+	                operacao = new Subtracao();
+	                break;
+	            case 3:
+	                operacao = new Multiplicacao();
+	                break;
+	            case 4:
+	                operacao = new Divisao();
+	                break;
+	            case 5:
+	                operacao = new Potenciacao();
+	                break;
+	        }
+	        return operacao.calcular(num1, num2);
+	    }
+
+	    void mostrarResultado(double resultado) {
+	        System.out.println("Resultado: " + resultado);
+	    }
+	}
+
+}
