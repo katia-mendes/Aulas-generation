@@ -3047,3 +3047,12 @@ Java Model Exception: Error in Java Model (code 969): ConstrucaoDaClasseContaCon
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-19 22:42:00.409
 !MESSAGE ConstrucaoDaClasseContaControlle does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 03:30:27.879
+!MESSAGE Classpath changed for project: exercicioComOptionaleException
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 03:31:07.098
+!MESSAGE Classpath changed for project: exercicioComOptionaleException
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 03:33:57.099
+!MESSAGE Classpath changed for project: exercicioOptionaleException
